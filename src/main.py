@@ -186,7 +186,7 @@ def preencher_forms(nome, cep, endereco):
                 EC.presence_of_element_located(
                     (
                         By.XPATH,
-                        "//*[contains(text(), 'Your response was submitted')]"
+                        "//*[contains(text(), 'Sua resposta foi enviada.')]"
                     )
                 )
             )
@@ -201,7 +201,7 @@ def preencher_forms(nome, cep, endereco):
             print("[ERRO] Não foi possível confirmar o envio.")
             print(
                 "O Microsoft Forms não apresentou a confirmação "
-                "'Your response was submitted'."
+                "'Sua resposta foi enviada'."
             )
 
             raise Exception(
